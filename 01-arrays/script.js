@@ -2,6 +2,17 @@
 // 1) Adicionar "a" no final das palavras
 const profissionais = ["desenvolvedor", "programador", "autor", "vereador", "professor"];
 
+//Array.metodo();
+
+const profissionaisMelhores = profissionais.map(
+  (item) => {
+    return item + 'a';
+  }
+);
+console.log(profissionaisMelhores)
+
+
+
 // 2) Retornar frutas com somente a primeira letra maiúscula
 const frutas = ["maçã", "banana", "Pera", "Melancia", "pêsSSEgO", "jAcA"];
 
