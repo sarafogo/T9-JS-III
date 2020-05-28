@@ -1,54 +1,83 @@
-// map(): faz uma iteração com todos os elementos da lista e retorna outra
-// map():
-// input: Array
-// output: Array de mesmo tamanho
+// // map(): faz uma iteração com todos os elementos da lista e retorna outra
+// // map():
+// // input: Array
+// // output: Array de mesmo tamanho
 
-// 1) Adicionar "a" no final das palavras
-const profissionais = [
-  "desenvolvedor",
-  "programador",
-  "autor",
-  "vereador",
-  "professor",
-];
+// // 1) Adicionar "a" no final das palavras
+// const profissionais = [
+//   "desenvolvedor",
+//   "programador",
+//   "autor",
+//   "vereador",
+//   "professor",
+// ];
 
-const profissionaisMelhores = profissionais.map(
-  (item) => {
-    return item + "a";
+// const profissionaisMelhores = profissionais.map(
+//   (item) => {
+//     return item + "a";
+//   }
+// );
+
+// //Array.metodo();
+
+// const profissionaisMelhores = profissionais.map(
+//   (item) => {
+//     return item + 'a';
+//   }
+// );
+// console.log(profissionaisMelhores)
+
+
+
+// // 2) Retornar frutas com somente a primeira letra maiúscula
+// const frutas = ["maçã", "banana", "Pera", "Melancia", "pêsSSEgO", "jAcA"];
+
+// // retorno:
+// // ["Maçã", "Banana", "Pera", "Melancia", "Pêssego", "Jaca"]
+
+// // passar por todos os itens:
+// // 1. colocar todas as letras minúsculas
+// // 2. colocar a primeira letra maiúscula
+// // 3. colocar a lista nova em uma variável
+
+// const frutasFormatadas = frutas.map(
+//   (item) => {
+//     const letraInicial = item[0].toUpperCase();
+//     const itemMinusculo = item.toLowerCase();
+//     const itemSemPrimeiraLetra = itemMinusculo.substring(1);
+
+//     return letraInicial + itemSemPrimeiraLetra;
+//   }
+// );
+
+
+// 3) Retornar uma nova array com o nome das alunas com a nota final
+
+const notasAlunas = [
+  { nome: "Julia", notas: [
+      { materia: "matemática", nota: 7, peso: 1.5 },
+      { materia: "portugues", nota: 3, peso: 2 }
+    ]
+  },
+  { nome: "Zelia", notas: [
+      { materia: "matemática", nota: 6, peso: 1.5 },
+      { materia: "portugues", nota: 5, peso: 2 }
+    ]
+  },
+  { nome: "Jussara", notas: [
+      { materia: "matemática", nota: 8, peso: 1.5 },
+      { materia: "portugues", nota: 2, peso: 2 }
+    ]
   }
-);
+]
 
-//Array.metodo();
-
-const profissionaisMelhores = profissionais.map(
-  (item) => {
-    return item + 'a';
+notasAlunas.map(
+  (aluna) => {
+    notasAlunas.nota * notaAlunas.peso
+    return aluna
   }
-);
-console.log(profissionaisMelhores)
+)
 
-
-
-// 2) Retornar frutas com somente a primeira letra maiúscula
-const frutas = ["maçã", "banana", "Pera", "Melancia", "pêsSSEgO", "jAcA"];
-
-// retorno:
-// ["Maçã", "Banana", "Pera", "Melancia", "Pêssego", "Jaca"]
-
-// passar por todos os itens:
-// 1. colocar todas as letras minúsculas
-// 2. colocar a primeira letra maiúscula
-// 3. colocar a lista nova em uma variável
-
-const frutasFormatadas = frutas.map(
-  (item) => {
-    const letraInicial = item[0].toUpperCase();
-    const itemMinusculo = item.toLowerCase();
-    const itemSemPrimeiraLetra = itemMinusculo.substring(1);
-
-    return letraInicial + itemSemPrimeiraLetra;
-  }
-);
 
 // filter(): retorna uma nova array com apenas com elementos que atendem à condição
 // 1) Criar nova array somente com números pares
